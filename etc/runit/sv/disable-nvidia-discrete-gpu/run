@@ -1,3 +1,3 @@
 #!/bin/sh
-exec env TURN_OFF_GPU_ONLY=1 nvidia-xrun > /dev/null 2>&1 & # removes dGPU pci from the bus
+exec env TURN_OFF_GPU_ONLY=1 nvidia-xrun > /dev/null & # removes dGPU pci from the bus
 sv down disable-nvidia-discrete-gpu # simulating systemd's type=oneshot

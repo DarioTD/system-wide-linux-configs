@@ -3,7 +3,7 @@
 GRUB_DEFAULT=0
 GRUB_TIMEOUT=1
 GRUB_DISTRIBUTOR="Artix"
-GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 acpi_osi=Linux video=1920x1080"
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=1 acpi_osi='Windows 2012' sysrq_always_enabled=244 video=1920x1080" #intel_iommu=on"
 GRUB_CMDLINE_LINUX=""
 
 # Preload both GPT and MBR modules so that they are not missed
@@ -43,7 +43,7 @@ GRUB_DISABLE_RECOVERY=true
 #GRUB_COLOR_HIGHLIGHT="light-cyan/blue"
 
 # Uncomment one of them for the gfx desired, a image background or a gfxtheme
-GRUB_BACKGROUND="/usr/share/backgrounds/GradientGlowBlue.jpg"
+#GRUB_BACKGROUND="/usr/share/backgrounds/GradientGlowBlue.jpg"
 #GRUB_THEME="/path/to/gfxtheme"
 
 # Uncomment to get a beep at GRUB start
